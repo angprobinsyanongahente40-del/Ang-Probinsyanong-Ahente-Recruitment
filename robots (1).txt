@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://angprobinsyanongahente-recruitment.vercel.app/sitemap.xml
