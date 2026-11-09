@@ -830,7 +830,7 @@
 <p class="hero-quote">May gusto ka bang malaman tungkol sa trabaho o kung paano magsimula? Hindi mo kailangang magdesisyon agad. Pag-usapan muna natin ang trabaho at mga kondisyon, tapos saka ka magpasya kung ano ang susunod mong gagawin.</p>
 <div class="hero-invite"><span aria-hidden="true" class="hero-invite-mark">✦</span><div><strong>Magtanong muna—wala ka pang kailangang pagdesisyunan.</strong><small>Sagutan ang maikling survey para malaman ni Erwin kung ano ang gusto mong itanong.</small></div></div>
 <div class="hero-cta-row">
-<button class="btn btn-primary js-open-form" type="button">Tingnan kung bagay sa’yo <span aria-hidden="true">→</span></button>
+<button class="btn btn-primary js-open-form" type="button">Simulan ang Iyong Real Estate Journey <span aria-hidden="true">→</span></button>
 <a class="btn btn-secondary" href="#painPoints">Tingnan ang mga puwede mong itanong</a>
 </div>
 <p class="hero-disclaimer">Hindi mo kailangang magpasya agad. Magtanong muna tungkol sa trabaho, mga kailangan, at kung ano talaga ang kalagayan.</p>
@@ -1116,7 +1116,7 @@
 <span class="eyebrow">Walang pilitan · Usap muna</span>
 <h2>Baka dito magsimula ang bago mong trabaho.</h2>
 <p>Gusto mo pang malaman? Ilagay ang pangalan, mobile number, at email mo. Kakausapin ka ni Erwin Baguioan tungkol sa pagiging agent sa Inner SPARC.</p>
-<button class="btn btn-primary js-open-form" type="button">Simulan ang usapan <span aria-hidden="true">→</span></button>
+<button class="btn btn-primary js-open-form" type="button"> Ipakita ang Interes Mo <span aria-hidden="true">→</span></button>
 </div>
 </section>
 </main>
@@ -1270,30 +1270,30 @@
       const thankYouMessage = document.getElementById('thankYouMessage');
       const thankYouEmail = document.getElementById('thankYouEmail');
       const QUIZ = [
-        { label: 'Lisensya', q: 'May lisensya ka na ba mula sa PRC para sa real estate?', tl: 'May lisensya ka na ba mula sa PRC para sa real estate?', options: [
-          { t: 'Oo, may lisensya na ako', tl: 'Oo, may lisensya na ako', s: 2 },
-          { t: 'Nag-aaral pa ako o nag-aasikaso na ng lisensya', tl: 'Nag-aaral pa ako o nag-aasikaso na ng lisensya', s: 1 },
-          { t: 'Wala pa akong lisensya', tl: 'Wala pa akong lisensya', s: 0, tip: 'license' } ] },
-        { label: 'Karanasan', q: 'May karanasan ka na ba sa sales, customer service, o trabahong madalas kumausap ng tao?', tl: 'May karanasan ka na ba sa sales, customer service, o trabahong madalas kumausap ng tao?', options: [
-          { t: 'Oo, 2 taon o higit pa', tl: 'Oo, 2 taon o higit pa', s: 2 },
-          { t: 'Oo, wala pang 2 taon', tl: 'Oo, wala pang 2 taon', s: 1 },
-          { t: 'Wala pa akong karanasan', tl: 'Wala pa akong lisensya akong karanasan', s: 0 } ] },
-        { label: 'Oras kada linggo', q: 'Ilang oras kada linggo ang kaya mong ibigay sa trabahong ito?', tl: 'Ilang oras kada linggo ang kaya mong ibigay sa trabahong ito?', options: [
-          { t: 'Full-time (40 oras o higit pa)', tl: 'Full-time (40 oras o higit pa)', s: 2 },
-          { t: 'Part-time (15 hanggang 39 oras)', tl: 'Part-time (15 hanggang 39 oras)', s: 1 },
-          { t: 'Mas mababa sa 15 oras', tl: 'Mas mababa sa 15 oras', s: 0, ko: true, tip: 'hours' } ] },
-        { label: 'Bayad', q: 'Commission ang bayad sa real estate, kaya puwedeng mag-iba ang kita. Ayos ba sa’yo iyon?', tl: 'Bayad ang bayad sa real estate, kaya puwedeng mag-iba ang kita. Ayos ba sa’yo iyon?', options: [
-          { t: 'Ayos lang sa akin. Kaya kong tustusan ang mga gastusin ko habang nagsisimula pa lang.', tl: 'Ayos lang sa akin. Kaya kong tustusan ang mga gastusin ko habang nagsisimula pa lang.', s: 2 },
-          { t: 'Ayos lang sa akin, pero kailangan ko na rin ng kita.', tl: 'Ayos lang sa akin, pero kailangan ko na rin ng kita.', s: 1 },
-          { t: 'Kailangan ko ng tiyak na sahod kada buwan.', tl: 'Kailangan ko ng tiyak na sahod kada buwan.', s: 0, ko: true, tip: 'income' } ] },
-        { label: 'Pagpo-post at paghahanap ng kliyente', q: 'Handa ka bang gumamit ng cellphone at social media para mag-post ng mga property at sumagot sa mga nagtanong?', tl: 'Handa ka bang gumamit ng cellphone at social media para mag-post ng mga property at sumagot sa mga nagtanong?', options: [
-          { t: 'Oo, ginagawa ko na ito', tl: 'Oo, ginagawa ko na ito', s: 2 },
-          { t: 'Oo, handa akong matuto', tl: 'Oo, handa akong matuto', s: 1 },
-          { t: 'No', tl: 'Hindi', s: 0, tip: 'marketing' } ] },
-        { label: 'Kailan magsisimula', q: 'Kailan ka puwedeng magsimula?', tl: 'Kailan ka puwedeng magsimula?', options: [
-          { t: 'Sa loob ng 2 linggo', tl: 'Sa loob ng 2 linggo', s: 2 },
-          { t: 'Sa loob ng isang buwan', tl: 'Sa loob ng isang buwan', s: 1 },
-          { t: 'Mahigit isang buwan pa', tl: 'Mahigit isang buwan pa', s: 0 } ] }
+        { label: 'License', q: 'Do you have a PRC real estate license?', tl: 'Do you have a PRC real estate license?', options: [
+          { t: 'Yes, I am licensed', tl: 'Yes, I am licensed', s: 2 },
+          { t: 'I am studying or applying for it', tl: 'I am studying or applying for it', s: 1 },
+          { t: 'Not yet', tl: 'Not yet', s: 0, tip: 'license' } ] },
+        { label: 'Experience', q: 'Have you worked in sales, customer service, or another client-facing role?', tl: 'Have you worked in sales, customer service, or another client-facing role?', options: [
+          { t: 'Yes, 2 years or more', tl: 'Yes, 2 years or more', s: 2 },
+          { t: 'Yes, less than 2 years', tl: 'Yes, less than 2 years', s: 1 },
+          { t: 'No experience yet', tl: 'No experience yet', s: 0 } ] },
+        { label: 'Hours per day', q: 'How many hours per day can you commit to real estate?', tl: 'How many hours per day can you commit to real estate?', options: [
+          { t: '6–8 hours a day', tl: '6–8 hours a day', s: 2 },
+          { t: '3–5 hours a day', tl: '3–5 hours a day', s: 1 },
+          { t: '1–2 hours a day', tl: '1–2 hours a day', s: 0, ko: true, tip: 'hours' } ] },
+        { label: 'Commission', q: 'Real estate income is commission-based. How do you feel about that?', tl: 'Real estate income is commission-based. How do you feel about that?', options: [
+          { t: 'Comfortable. I can cover my needs while I build my sales', tl: 'Comfortable. I can cover my needs while I build my sales', s: 2 },
+          { t: 'Okay with it, but I need income soon', tl: 'Okay with it, but I need income soon', s: 1 },
+          { t: 'I need a fixed salary', tl: 'I need a fixed salary', s: 0, ko: true, tip: 'income' } ] },
+        { label: 'Marketing', q: 'Are you ready to use your phone and social media to market listings and follow up leads?', tl: 'Are you ready to use your phone and social media to market listings and follow up leads?', options: [
+          { t: 'Yes, I already do this', tl: 'Yes, I already do this', s: 2 },
+          { t: 'Yes, I am willing to learn', tl: 'Yes, I am willing to learn', s: 1 },
+          { t: 'No', tl: 'No', s: 0, tip: 'marketing' } ] },
+        { label: 'Start date', q: 'When can you start?', tl: 'When can you start?', options: [
+          { t: 'Within 1 week', tl: 'Within 1 week', s: 2 },
+          { t: 'Within a month', tl: 'Within a month', s: 1 },
+          { t: 'More than a month from now', tl: 'More than a month from now', s: 0 } ] }
       ];
       const quizKeys = ['license', 'experience', 'weeklyHours', 'commission', 'marketing', 'startDate'];
       const escapeHTML = (value) => String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
@@ -1335,7 +1335,7 @@
       function showQuiz(questionIndex = 0) {
         quizView.hidden = false;
         form.hidden = true;
-        title.textContent = 'Mga tanong tungkol sa pagiging agent';
+        title.textContent = 'SIMULAN ANG IYONG PAGIGING AGENT';
         closeButton.setAttribute('aria-label', 'Isara ang survey');
         showQuizQuestion(questionIndex);
       }
@@ -1344,7 +1344,7 @@
         form.hidden = false;
         thankYouView.hidden = true;
         step.textContent = 'HULING HAKBANG · CONTACT DETAILS';
-        title.textContent = 'Kausapin si Erwin';
+        title.textContent = 'Ibahagi ang Iyong Contact Information';
         closeButton.setAttribute('aria-label', 'Isara ang form');
         window.setTimeout(() => document.getElementById('leadName').focus(), 20);
       }
@@ -1381,7 +1381,7 @@
               : 'Baka may kailangan ka pang ihanda o ayusin bago magsimula.';
         const tipMessages = {
           license: 'Lisensya: alamin kung anong lisensya o accreditation mula sa PRC ang kailangan bago magsimula.',
-          hours: 'Oras: kailangan mong makapagbigay ng hindi bababa sa 15 oras kada linggo para sa trabahong ito.',
+          hours: 'Availability: this role may require more than 1–2 hours per day. Please discuss the expected schedule before deciding.',
           income: 'Kita: commission ang bayad, kaya puwedeng mag-iba ang kita. Pag-usapan kung ayos sa’yo ito.',
           marketing: 'Pagpo-post at paghahanap ng kliyente: pag-usapan kung paano gagamit ng cellphone at social media para mag-post ng property at sumagot sa mga nagtanong.'
         };
@@ -1488,7 +1488,7 @@
         apiPost('submitRecruitmentLead', payload,
           (result) => {
             submitButton.disabled = false;
-            submitButton.innerHTML = 'Ipadala ang mensahe ko <span aria-hidden="true">→</span>';
+            submitButton.innerHTML = 'Ipaalam ang Interes Ko <span aria-hidden="true">→</span>';
             if (result && result.success) {
               const applicantName = payload.name;
               const applicantEmail = payload.email;
@@ -1537,7 +1537,7 @@
     })();
   </script>
 <script>
-    (() => {
+    (() => {siteLoader
       const hero = document.getElementById('home');
       if (hero && 'IntersectionObserver' in window) {
         const observer = new IntersectionObserver(([entry]) => document.body.classList.toggle('hero-in-view', entry.isIntersecting), {threshold:.18});
